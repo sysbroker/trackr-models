@@ -5,5 +5,5 @@ module.exports = function(Agent) {
 	/**
    * Hooks
    */
-	require('./agent/hooks')(Checkin);
+	require('./agent/hooks')(Agent);
 };
