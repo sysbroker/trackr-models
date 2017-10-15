@@ -1,6 +1,6 @@
 'use strict';
 
-const TrackService = require('./track.service');
+const TrackService = require('./service');
 
 /**
  * loopback remotes from Track model

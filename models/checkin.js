@@ -3,5 +3,5 @@ module.exports = function(Checkin) {
   /**
    * Hooks
    */
-  require('./checkin.hooks')(Checkin);
+  require('./checkin/hooks')(Checkin);
 };

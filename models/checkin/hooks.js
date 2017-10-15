@@ -1,5 +1,5 @@
 'use strict';
-const CheckinFactory = require('./checkin.factory');
+const CheckinFactory = require('./factory');
 module.exports = (Checkin) => {
   Checkin.observe('before save', (ctx, next) => {
     const {instance} = ctx;
