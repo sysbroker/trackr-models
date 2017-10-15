@@ -20,5 +20,5 @@ module.exports = function(Track) {
   /**
    * Hooks
    */
-  require('./track.hooks')(Track);
+  require('./track/hooks')(Track);
 };
