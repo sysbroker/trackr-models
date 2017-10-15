@@ -1,0 +1,29 @@
+{
+  "name": "Customer",
+  "plural": "customers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "federalTaxNumber": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "agents": {
+      "type": "hasMany",
+      "model": "Agent",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

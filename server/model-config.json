@@ -1,0 +1,30 @@
+{
+  "Customer": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Point": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Route": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Checkin": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Track": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Agent": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoutePoint": {
+    "dataSource": "db",
+    "public": false
+  }
+}

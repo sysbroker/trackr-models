@@ -1,0 +1,38 @@
+{
+  "name": "Point",
+  "plural": "points",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "GeoPoint",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": ""
+    },
+    "checkins": {
+      "type": "hasMany",
+      "model": "Checkin",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

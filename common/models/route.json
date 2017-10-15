@@ -1,0 +1,33 @@
+{
+  "name": "Route",
+  "plural": "routes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": ""
+    },
+    "points": {
+      "type": "hasMany",
+      "model": "Point",
+      "foreignKey": "",
+      "through": "RoutePoint"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
