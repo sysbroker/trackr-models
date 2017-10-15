@@ -15,7 +15,7 @@ module.exports = function(Track) {
   /**
    * Remotes
    */
-  require('./track.remotes')(Track);
+  require('./track/remotes')(Track);
 
   /**
    * Hooks
